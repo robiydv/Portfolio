@@ -1,42 +1,418 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Yadav | Data Engineer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
-    <h1>Rahul Yadav</h1>
-    <p>Engineer | Data Enthusiast | Explorer 🌍</p>
-    <p>I want to travel the world & build impactful tech</p>
-  </header>
+    <!-- Animated Background -->
+    <div class="bg-overlay"></div>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I am an engineering student passionate about technology and data.</p>
-  </section>
+    <!-- Navbar -->
 
-  <section>
-    <h2>Skills</h2>
-    <p>Python, SQL, Excel, HTML, CSS</p>
-  </section>
+    <nav class="navbar">
 
-  <section>
-    <h2>Projects</h2>
-    <p>Healthcare Dashboard Project</p>
-  </section>
+        <div class="logo">
+            <span>{RY}</span> Rahul Yadav
+        </div>
 
-  <section>
-    <h2>Education</h2>
-    <p>Rajasthan Technical University, Kota ( Rajasthan)</p>
-  </section>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: robiydv01@gmail.com</p>
-  </section>
+        <a href="#" class="cv-btn">
+            Download CV
+        </a>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-left" data-aos="fade-right">
+
+            <h3>Hi, I'm</h3>
+
+            <h1>
+                Rahul Yadav
+            </h1>
+
+            <h2>
+                Aspiring Data Engineer &
+                Data Analyst
+            </h2>
+
+            <p>
+
+                Turning data into meaningful insights
+                with AI, Analytics & Engineering.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#project" class="btn-primary">
+                    View My Work
+                </a>
+
+                <a href="#contact" class="btn-secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right" data-aos="fade-left">
+
+            <div class="glass-card">
+
+                <div class="info-item">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>
+                        B.Tech - Artificial Intelligence &
+                        Data Science
+                        <br>
+                        Rajasthan Technical University, Kota
+                    </span>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>
+                        Alwar, Rajasthan, India
+                    </span>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>
+                        Passionate about Data,
+                        Technology & Travel
+                    </span>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>
+                        Always Learning,
+                        Always Exploring
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <div class="about-left" data-aos="fade-up">
+
+            <h4>ABOUT ME</h4>
+
+            <h2>
+                Data. Insights. Impact.
+            </h2>
+
+            <p>
+
+                I'm Rahul Yadav, an aspiring Data Engineer
+                and Data Analyst with a strong foundation
+                in Artificial Intelligence and Data Science.
+
+            </p>
+
+            <p>
+
+                I enjoy transforming raw data into actionable
+                insights using Python, SQL, Tableau and Power BI.
+
+            </p>
+
+            <div class="about-boxes">
+
+                <div class="box">
+                    <h5>Name</h5>
+                    <p>Rahul Yadav</p>
+                </div>
+
+                <div class="box">
+                    <h5>Location</h5>
+                    <p>Alwar, Rajasthan</p>
+                </div>
+
+                <div class="box">
+                    <h5>Education</h5>
+                    <p>B.Tech (AI & DS)</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="about-right" data-aos="zoom-in">
+
+            <img src="images/profile.png" alt="Rahul">
+
+            <h3>
+                Curious Mind.
+                Data Driven Heart.
+            </h3>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="skills">
+
+        <h2>My Tech Stack</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>SQL</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-chart-column"></i>
+                <h3>Power BI</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Tableau</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-book"></i>
+                <h3>Jupyter</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-server"></i>
+                <h3>MySQL</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-chart-pie"></i>
+                <h3>Data Analysis</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECT SECTION -->
+
+    <section id="project" class="project">
+
+        <h2>Healthcare Dataset Analysis</h2>
+
+        <div class="project-container">
+
+            <div class="project-left">
+
+                <h3>Healthcare Analytics Dashboard</h3>
+
+                <p>
+
+                    Complete healthcare dataset analysis
+                    including Data Cleaning,
+                    Exploratory Data Analysis,
+                    Data Visualization
+                    and Power BI Dashboard.
+
+                </p>
+
+                <ul>
+
+                    <li>Data Cleaning</li>
+
+                    <li>EDA Analysis</li>
+
+                    <li>Power BI Dashboard</li>
+
+                    <li>Insight Generation</li>
+
+                </ul>
+
+            </div>
+
+            <div class="project-right">
+
+                <img src="images/healthcare-dashboard.png">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TRAVEL SECTION -->
+
+    <section id="travel" class="travel">
+
+        <h2>Travel Diaries</h2>
+
+        <h3>Dream Destinations</h3>
+
+        <div class="travel-grid">
+
+            <div class="travel-card">
+                <img src="images/iceland.jpg">
+                <span>Iceland</span>
+            </div>
+
+            <div class="travel-card">
+                <img src="images/switzerland.jpg">
+                <span>Switzerland</span>
+            </div>
+
+            <div class="travel-card">
+                <img src="images/japan.jpg">
+                <span>Japan</span>
+            </div>
+
+            <div class="travel-card">
+                <img src="images/newzealand.jpg">
+                <span>New Zealand</span>
+            </div>
+
+        </div>
+
+        <h3>Places I've Explored</h3>
+
+        <div class="travel-grid">
+
+            <div class="travel-card">
+                <img src="images/manali.jpg">
+                <span>Manali</span>
+            </div>
+
+            <div class="travel-card">
+                <img src="images/jaipur.jpg">
+                <span>Jaipur</span>
+            </div>
+
+            <div class="travel-card">
+                <img src="images/rishikesh.jpg">
+                <span>Rishikesh</span>
+            </div>
+
+            <div class="travel-card">
+                <img src="images/udaipur.jpg">
+                <span>Udaipur</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+        <h2>Let's Connect</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <p>Email: rahulyadav@gmail.com</p>
+
+                <p>LinkedIn: linkedin.com/in/rahulyadav</p>
+
+                <p>Instagram: instagram.com/rahulydv</p>
+
+                <p>Twitter: x.com/rahulydv</p>
+
+            </div>
+
+            <form>
+
+                <input type="text" placeholder="Your Name">
+
+                <input type="email" placeholder="Your Email">
+
+                <input type="text" placeholder="Subject">
+
+                <textarea placeholder="Your Message"></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        © 2026 Rahul Yadav | Data Engineer Portfolio
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+    </script>
 
 </body>
+
 </html>
